@@ -1,0 +1,9 @@
+ptrAcuMetro=&AcuMetro;
+ptrAcuCable=&AcuCable;
+ptrAcuEco=&AcuEco;
+ptrAcuRTP=&AcuRTP;
+ptrAcuRuta=&AcuMBus;
+ptrAcuTren=&AcuRuta;
+ptrAcuGas=&AcuTren;
+ptrgastoGas=&AcuGas;
+ptrSueldo=&sueldo;
