@@ -63,14 +63,22 @@ int main(){
             printf("Tu saldo actual es %.2f\n\nQue mas te gustaria hacer?\n", *ptrSueldo);
             break;
         case 8:
-            printf("Seleccionaste la Gasolina \n\n"); 
-            ptrNombre="Gasolina";
-            saldoSuficiente(ptrSueldo,5, ptrNombre,ptrgastoGas);
+            printf("Seleccionaste Gasolina \n\n");
+            gasolina(ptrSueldo, ptrAcuGas,ptrgastoGas);
             printf("Tu saldo actual es %.2f\n\nQue mas te gustaria hacer?\n", *ptrSueldo);
             break;
         case 9:
             printf("INSTRUCCIONES:\n"); 
-            break;
+            arch=fopen(direccionIntrucciones,"r+");
+            if (arch==NULL)
+            {
+                printf("Error al abrir el archivo\n");
+                return -1;
+            }while ((caracter=fgetc(arch)) != EOF)
+            {
+                printf("%c", caracter);
+            }fclose(arch);
+           break;
         case 10:
             printf("Servicio\tViajes\t\tMonto Gastado\n");
             printf("Metro\t\t%d\t\t%d\n", *ptrAcuMetro, (*ptrAcuMetro * 5));
@@ -84,6 +92,26 @@ int main(){
             printf("\nSu sueldo restante es: %0.2f\n\n", *ptrSueldo);
             break;
         case 11:
+            fd = fopen(direccion, "at");
+            if (fd==NULL)
+                printf("Error al crea el archivo");
+                printf("EEscribe la fecha\n");
+                gets(fecha);
+
+                printf("El archivo de texto ha sido creado/actualizado\n");
+                printf("Con el nombre de Gastos.txt");
+
+                fprintf(fd, "Fecha: %s\n",fecha);
+                fprintf(fd,"Servicio\tViajes\t\tMonto Gastado\n");
+                fprintf(fd,"Metro\t\t%d\t\t%d\n", *ptrAcuMetro, (*ptrAcuMetro * 5));
+                fprintf(fd,"CableBus\t\t%d\t\t%d\n", *ptrAcuCable, (*ptrAcuCable * 5));
+                fprintf(fd,"Ecobici\t\t%d\t\t%d\n", *ptrAcuEco, (*ptrAcuEco * 13));
+                fprintf(fd,"RTP\t\t%d\t\t%d\n", *ptrAcuRTP, (*ptrAcuRTP * 3));
+                fprintf(fd,"Metrobus\t%d\t\t%d\n", *ptrAcuMBus, (*ptrAcuMBus * 6));
+                fprintf(fd,"Ruta\t\t%d\t\t%0.2f\n", *ptrAcuRuta, (*ptrAcuRuta * 5.5));
+                fprintf(fd,"Tren Ligero\t%d\t\t%d\n", *ptrAcuTren, (*ptrAcuTren * 3));
+                fprintf(fd,"Gasolina\t%d\t\t%0.2f\n", *ptrAcuGas, *ptrgastoGas);
+                fprintf(fd,"\nSu sueldo restante es: %0.2f\n\n\n\n", *ptrSueldo);
             break;
         case 0:
             printf("Gracias por usar el programa :)\n"); 

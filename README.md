@@ -7,8 +7,8 @@ En primer lugar tenemos la opcion de ingresar el sueldo mensual.
 A continuacion se muestran las opciones a elegir.
 Dependiendo de que servicio quieras utilizar podrás navegar dentro del menú tecleando el numero que corresponde a cada opción y presionando entrer.
 
-Si la opción que ingresaste no se encuentra dentro de las presentadas, se te indicará que debes teclear otra opción.
-Dependiendo de las opciones podrás ingresar la cantidad de veces que sean necesarias el servicio utilizado.
+Si la opción que ingresaste no se encuentra dentro de las presentadas, se te indicara que debes teclear otra opción.
+Dependiendo de las opciones podras ingresar la cantidad de veces que sean necesarias el servicio utilizado.
 Esto te permitirá no tener que volver al menú y repetir el proceso una gran cantidad de veces.
 
 Todos los decuentos que se hagan a tu salario podrán ser vistos después de utilizar algún servicio o en cualquier momento tecleando la opción de "Ver gastos",

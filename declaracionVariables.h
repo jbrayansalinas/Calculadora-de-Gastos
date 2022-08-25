@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 char direccion[]= "C:\\Users\\Wposs\\Documents\\C\\proyecto_calculadora_Gastos\\Calculadora-de-Gastos\\Gastos.txt";
+char direccionIntrucciones[]= "C:\\Users\\Wposs\\Documents\\C\\proyecto_calculadora_Gastos\\Calculadora-de-Gastos\\instrucciones.txt";
 FILE *arch,*fd;
 
 float sueldo=0;

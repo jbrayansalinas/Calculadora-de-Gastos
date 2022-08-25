@@ -3,3 +3,4 @@
 #include <stdbool.h>
 
 #include "gasolina.h"
+#include "operaciones.h"
