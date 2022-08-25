@@ -2,8 +2,11 @@ ptrAcuMetro=&AcuMetro;
 ptrAcuCable=&AcuCable;
 ptrAcuEco=&AcuEco;
 ptrAcuRTP=&AcuRTP;
-ptrAcuRuta=&AcuMBus;
-ptrAcuTren=&AcuRuta;
-ptrAcuGas=&AcuTren;
-ptrgastoGas=&AcuGas;
+ptrAcuMBus=&AcuMBus;
+ptrAcuRuta=&AcuRuta;
+ptrAcuTren=&AcuTren;
+ptrAcuGas=&AcuGas;
+ptrgastoGas=&gastoGas;
 ptrSueldo=&sueldo;
+
+ptrNombre=&nombre[0];
