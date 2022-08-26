@@ -1,0 +1,15 @@
+Fecha: 26/08/2022
+Servicio	Viajes		Monto Gastado
+Metro		2		10
+CableBus		1		5
+Ecobici		1		13
+RTP		0		0
+Metrobus	0		0
+Ruta		0		0.00
+Tren Ligero	0		0
+Gasolina	0		0.00
+
+Su sueldo restante es: 72.00
+
+
+

@@ -95,7 +95,7 @@ int main(){
             fd = fopen(direccion, "at");
             if (fd==NULL)
                 printf("Error al crea el archivo");
-                printf("EEscribe la fecha\n");
+                printf("Escribe la fecha\n");
                 gets(fecha);
 
                 printf("El archivo de texto ha sido creado/actualizado\n");
@@ -118,10 +118,9 @@ int main(){
             hola=false;
             break;
         default:
+        printf("Esta no es una opcion valida");
             break;
         }
-        
-
     }
 
     return 0;
